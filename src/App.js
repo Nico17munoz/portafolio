@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import NavBar from '../src/Components/NavBar';
+import Proyectos from '../src/Components/Proyectos';
+import Skills from './Components/Skills';
+import Contacto from '../src/Components/Contacto';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <NavBar/>
+        <h1>Hola Soy Nicole Muñoz Desarrolladora Web</h1>
+           <p className="Parraf">Soy una amante del deporte y nuevos aprendizajes,
+           enfrentando constantemente nuevos desafíos y 
+           comenzando un nuevo camino en el área de la tecnología, con el desarrolloweb.</p>
+           <Proyectos/>
+           <Skills/>
+           <Contacto/>
     </div>
   );
 }
